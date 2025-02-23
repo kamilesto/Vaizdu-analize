@@ -1,9 +1,13 @@
 ## Veidų Atpažinimo Sistemos – ND1, ND2, ND3
 
 Prieš failų paleidimus įdiegite reikalingas bibliotekas Python terminale su šia komanda:
-- pip install -r requirements.txt
+
+   pip install -r requirements.txt
+   
 Jei kyla problemų, bandykite rankiniu būdu:
-- pip install tensorflow keras opencv-python numpy pillow deepface retinaface torch transformers tk flask gradio-client huggingface_hub
+
+   pip install tensorflow keras opencv-python numpy pillow deepface retinaface torch transformers tk flask gradio-client huggingface_hub
+
 
 ### 1 ND – Veidų Atpažinimo ir blur efekto taikymo Sistema
 
