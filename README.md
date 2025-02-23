@@ -1,18 +1,15 @@
 ## Veidų Atpažinimo Sistemos – ND1, ND2, ND3
 
-Prieš failų paleidimus įdiegite reikalingas bibliotekas Python terminale su šia komanda:
-
-   pip install -r requirements.txt
-   
-Jei kyla problemų, bandykite rankiniu būdu:
-
+Prieš failų paleidimus įdiegite reikalingas bibliotekas Python terminale su šia komanda:<br>
+   pip install -r requirements.txt<br>
+Jei kyla problemų, bandykite rankiniu būdu:<br>
    pip install tensorflow keras opencv-python numpy pillow deepface retinaface torch transformers tk flask gradio-client huggingface_hub
 
 
 ### 1 ND – Veidų Atpažinimo ir blur efekto taikymo Sistema
 
 Sistemos Paleidimo Instrukcijos:
-1. Paleiskite programą terminale:
+1. Paleiskite programą terminale:<br>
    python nd1.py
 2. Naudojimosi žingsniai:
    - Pasirinkite nuotrauką su keliais žmonėmis.
@@ -30,9 +27,17 @@ Iškilusios problemos ir sprendimai:
 1. Netikslus aptikimas su Haar Cascade, pakeista į RetinaFace.
 2. Netikslus DeepFace atpažinimas, pridėtas klaidų valdymas ir slenkstinė reikšmė.
 3. Programa nulūžta be veidų, pridėta išankstinė patikra.
+
+
+*Papildomi komentarai:*
+- Pasibandymui naudojau people.jpg ir person.jpg, kurio rezultatas matomas result.png.
 ---
 
 ### 2 ND – Veidų Atpažinimo Vaizdo Įraše Sistema
+
+Sistemos Paleidimo Instrukcijos:
+1. Paleiskite programą:<br>
+   python nd2.py
 
 Bibliotekos:
 - OpenCV, PyTorch, Transformers, Tkinter.
@@ -53,17 +58,16 @@ Iškilusios problemos ir sprendimai:
 1. Lėtas Transformer modelis, optimizacija naudojant GPU ("torch.cuda").
 2. Tkinter GUI problemos, naudojamas "root.update()".
 
-Sistemos Paleidimo Instrukcijos:
-1. Paleiskite programą:
-   python nd2.py
+*Papildomi komentarai:*
+- Pasibandymui naudojau person.jpg ir people1_video.mp4, kurio rezultatas matomas output_video.mp4.
 ---
 
 ### 3 ND – Veidų Atpažinimo Web Sistema
 
 Sistemos Paleidimo Instrukcijos:
-1. Atidarykite katalogą terminale:
+1. Atidarykite katalogą terminale:<br>
    cd nd3
-2. Paleiskite programą:
+2. Paleiskite programą:<br>
    python nd3.py
 3. Web sąsajos naudojimas:
    - Terminale pasirodys nuoroda, kuri turėtų būti: http://127.0.0.1:5000, ir ją atidarykite naršyklėje.
@@ -85,3 +89,4 @@ Iškilusios problemos ir sprendimai:
 
 *Papildomi komentarai:*
 - Modelis įkeltas į Hugging Face: https://huggingface.co/spaces/kamilesto/faceRecognation
+- Python failai buvo kuriami Visual Studio Code aplinkoje, 3ND svetainės stilius sukurtas templates/index.html faile.
