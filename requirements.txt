@@ -1,0 +1,13 @@
+tensorflow
+keras
+opencv-python
+numpy
+pillow
+deepface
+retinaface
+torch
+transformers
+tk
+flask
+gradio-client
+huggingface_hub
