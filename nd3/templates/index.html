@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veidų Atpažinimas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .form-container {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 8px;
+            font-size: 14px;
+        }
+
+        input[type="file"] {
+            display: block;
+            margin: 6px auto;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 90%;
+            font-size: 12px;
+        }
+
+        button {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 6px 10px;
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: 0.3s;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background: #45a049;
+        }
+
+        .result-container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-top: 10px;
+            position: relative;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        .save-btn {
+            margin-top: 10px;
+            background: #007bff;
+            padding: 6px 10px;
+            border-radius: 4px;
+            text-decoration: none;
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+            transition: 0.3s;
+            display: block;
+            width: 80%;
+            margin: 10px auto;
+        }
+
+        .save-btn:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Veidų Atpažinimas</h1>
+
+    <div class="container">
+        <!-- Forma failams įkelti -->
+        <div class="form-container">
+            <form action="/process" method="post" enctype="multipart/form-data">
+                <label>Pagrindinė nuotrauka:</label>
+                <input type="file" name="image" required>
+
+                <label>Referencinis veidas:</label>
+                <input type="file" name="reference" required>
+
+                <button type="submit">Apdoroti</button>
+            </form>
+        </div>
+
+        <!-- Rezultato rodymas -->
+        {% if result_image %}
+        <div class="result-container">
+            <h2>Apdorotas Vaizdas</h2>
+            <img src="{{ result_image }}" alt="Apdorotas vaizdas" style="max-width: 100%; height: auto;">
+            <a href="{{ result_image }}" download="processed_result.png" class="save-btn">Atsisiųsti PNG</a>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
