@@ -5,6 +5,13 @@ Prieš failų paleidimus įdiegite reikalingas bibliotekas Python terminale su �
 Jei kyla problemų, bandykite rankiniu būdu:<br>
    pip install tensorflow keras opencv-python numpy pillow deepface retinaface torch transformers tk flask gradio-client huggingface_hub
 
+Mano naudoti pavyzdžiai:
+- Referencinė nuotrauka: person.jpg
+- Žmonių nuotrauka: people.jpg
+- Žmonių vaizdo įrašas: people1_video.mp4
+rezultatai:
+- result.png ir processed_result.png (nd3/static/results)
+- output_video.mp4
 
 ### 1 ND – Veidų Atpažinimo ir blur efekto taikymo Sistema
 
