@@ -8,7 +8,7 @@ Jei kyla problemų, bandykite rankiniu būdu:<br>
 Mano naudoti pavyzdžiai:
 - Referencinė nuotrauka: person.jpg
 - Žmonių nuotrauka: people.jpg
-- Žmonių vaizdo įrašas: people1_video.mp4
+- Žmonių vaizdo įrašas: people1_video.mp4<br>
 rezultatai:
 - result.png ir processed_result.png (nd3/static/results)
 - output_video.mp4
