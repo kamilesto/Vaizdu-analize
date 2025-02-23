@@ -4,7 +4,6 @@ from PIL import Image
 import tkinter as tk
 from tkinter import filedialog
 from deepface import DeepFace
-import uuid
 from retinaface import RetinaFace
 
 # Funkcija nuotraukų parinkimams naudojant failų dialogą
