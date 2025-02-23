@@ -98,3 +98,6 @@ Iškilusios problemos ir sprendimai:
 *Papildomi komentarai:*
 - Modelis įkeltas į Hugging Face: https://huggingface.co/spaces/kamilesto/faceRecognation
 - Python failai buvo kuriami Visual Studio Code aplinkoje, 3ND svetainės stilius sukurtas templates/index.html faile.
+
+
+Jei bus klausimų, susisiekite el. paštu: kamile.stonyte@stud.vilniustech.lt
