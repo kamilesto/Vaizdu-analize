@@ -1,9 +1,13 @@
 ## Veidų Atpažinimo Sistemos – ND1, ND2, ND3
 
 Prieš failų paleidimus įdiegite reikalingas bibliotekas Python terminale su šia komanda:<br>
-   pip install -r requirements.txt<br>
-Jei kyla problemų, bandykite rankiniu būdu:<br>
+   ```
+pip install -r requirements.txt
+   ```
+Jei kyla problemų, bandykite rankiniu būdu:
+```
    pip install tensorflow keras opencv-python numpy pillow deepface retinaface torch transformers tk flask gradio-client huggingface_hub
+```
 
 Mano naudoti pavyzdžiai:
 - Referencinė nuotrauka: person.jpg
@@ -17,9 +21,11 @@ Rezultatai:
 ### 1 ND – Veidų Atpažinimo ir blur efekto taikymo Sistema
 
 Sistemos Paleidimo Instrukcijos:
-1. Paleiskite programą terminale:<br>
+1. Paleiskite programą terminale:
+   ```
    python nd1.py
-2. Naudojimosi žingsniai:
+   ```
+3. Naudojimosi žingsniai:
    - Pasirinkite nuotrauką su keliais žmonėmis.
    - Pasirinkite norimą atpažinti veidą.
    - Programa pažymės identifikuotą veidą ir kitiems veidams pritaikys blur efektą.
@@ -44,8 +50,10 @@ Iškilusios problemos ir sprendimai:
 ### 2 ND – Veidų Atpažinimo Vaizdo Įraše Sistema
 
 Sistemos Paleidimo Instrukcijos:
-1. Paleiskite programą:<br>
+1. Paleiskite programą:
+   ```
    python nd2.py
+   ```
 
 Bibliotekos:
 - OpenCV, PyTorch, Transformers, Tkinter.
@@ -64,7 +72,7 @@ Sistemos veikimo aprašymas:
 
 Iškilusios problemos ir sprendimai:
 1. Lėtas Transformer modelis, optimizacija naudojant GPU ("torch.cuda").
-2. Tkinter GUI problemos, naudojamas "root.update()".
+2. Tkinter GUI problemos, naudojamas ```root.update()```.
 
 *Papildomi komentarai:*
 - Pasibandymui naudojau person.jpg ir people1_video.mp4, kurio rezultatas matomas output_video.mp4.
@@ -73,11 +81,15 @@ Iškilusios problemos ir sprendimai:
 ### 3 ND – Veidų Atpažinimo Web Sistema
 
 Sistemos Paleidimo Instrukcijos:
-1. Atidarykite katalogą terminale:<br>
+1. Atidarykite katalogą terminale:
+```
    cd nd3
-2. Paleiskite programą:<br>
+```
+3. Paleiskite programą:
+   ```
    python nd3.py
-3. Web sąsajos naudojimas:
+   ```
+5. Web sąsajos naudojimas:
    - Terminale pasirodys nuoroda, kuri turėtų būti: http://127.0.0.1:5000, ir ją atidarykite naršyklėje.
    - Įkelkite pagrindinę nuotrauką ir referencinį veidą.
    - Tada matysite apdorotą rezultatą su pažymėtais veidais.
@@ -93,7 +105,7 @@ Naudoti metodai:
 
 Iškilusios problemos ir sprendimai:
 1. TensorFlow, Keras priklausomybių konfliktai, spręsta per rankinį diegimą.
-2. Netinkamas failų kelias Flask API, išsaugoma "static/" kataloge.
+2. Netinkamas failų kelias Flask API, išsaugoma ```static/``` kataloge.
 
 *Papildomi komentarai:*
 - Modelis įkeltas į Hugging Face: https://huggingface.co/spaces/kamilesto/faceRecognation
