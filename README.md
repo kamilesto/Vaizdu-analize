@@ -82,9 +82,9 @@ Iškilusios problemos ir sprendimai:
 
 Sistemos Paleidimo Instrukcijos:
 1. Atidarykite katalogą terminale:
-```
+   ```
    cd nd3
-```
+   ```
 3. Paleiskite programą:
    ```
    python nd3.py
@@ -109,7 +109,7 @@ Iškilusios problemos ir sprendimai:
 
 *Papildomi komentarai:*
 - Modelis įkeltas į Hugging Face: https://huggingface.co/spaces/kamilesto/faceRecognation
-- Python failai buvo kuriami Visual Studio Code aplinkoje, 3ND svetainės stilius sukurtas templates/index.html faile.
+- Python failai buvo kuriami Visual Studio Code aplinkoje, 3ND svetainės stilius templates/index.html faile.
 
 
 Jei bus klausimų, susisiekite el. paštu: kamile.stonyte@stud.vilniustech.lt
